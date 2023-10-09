@@ -10,12 +10,22 @@ import {
   bigShoe1,
   bigShoe2,
   bigShoe3,
+  bigBike1,
+  bigBike2,
+  bigBike3,
   customer1,
   customer2,
   shoe4,
   shoe5,
   shoe6,
   shoe7,
+  bike4,
+  bike5,
+  bike6,
+  bike7,
+  thumbnailBike1,
+  thumbnailBike2,
+  thumbnailBike3,
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3
@@ -40,6 +50,21 @@ export const shoes = [
   {
     thumbnail: thumbnailShoe3,
     bigShoe: bigShoe3
+  }
+]
+
+export const bikes = [
+  {
+    thumbnail: thumbnailBike1,
+    bigShoe: bigBike1
+  },
+  {
+    thumbnail: thumbnailBike2,
+    bigShoe: bigBike2
+  },
+  {
+    thumbnail: thumbnailBike3,
+    bigShoe: bigBike3
   }
 ]
 
@@ -68,6 +93,29 @@ export const products = [
   {
     imgURL: shoe7,
     name: 'Nike Air Jordan-001',
+    price: '$230.20'
+  }
+]
+
+export const equipment = [
+  {
+    imgURL: bike4,
+    name: 'Silver Air Street-01',
+    price: '$200.20'
+  },
+  {
+    imgURL: bike5,
+    name: 'Silver Air Street-10',
+    price: '$210.20'
+  },
+  {
+    imgURL: bike6,
+    name: 'Silver Air Street-100',
+    price: '$220.20'
+  },
+  {
+    imgURL: bike7,
+    name: 'Silver Air Street-001',
     price: '$230.20'
   }
 ]
@@ -112,12 +160,12 @@ export const footerLinks = [
   {
     title: 'Products',
     links: [
-      { name: 'Air Force 1', link: '/' },
-      { name: 'Air Max 1', link: '/' },
-      { name: 'Air Jordan 1', link: '/' },
-      { name: 'Air Force 2', link: '/' },
-      { name: 'Nike Waffle Racer', link: '/' },
-      { name: 'Nike Cortez', link: '/' }
+      { name: 'Silver Mountain 1', link: '/' },
+      { name: 'Silver Slim 1', link: '/' },
+      { name: 'Silver Street 1', link: '/' },
+      { name: 'Silver Race 2', link: '/' },
+      { name: 'Biker Blacke Racer', link: '/' },
+      { name: 'Biker Milestone', link: '/' }
     ]
   },
   {

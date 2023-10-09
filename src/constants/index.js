@@ -56,15 +56,15 @@ export const shoes = [
 export const bikes = [
   {
     thumbnail: thumbnailBike1,
-    bigShoe: bigBike1
+    bigBike: bigBike1
   },
   {
     thumbnail: thumbnailBike2,
-    bigShoe: bigBike2
+    bigBike: bigBike2
   },
   {
     thumbnail: thumbnailBike3,
-    bigShoe: bigBike3
+    bigBike: bigBike3
   }
 ]
 

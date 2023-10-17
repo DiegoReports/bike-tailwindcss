@@ -21,8 +21,9 @@ export default {
       colors: {
         primary: '#ECEEFF',
         'coral-red': '#FF671F',
-        'slate-gray': '#6D6D6D',
-        'pale-blue': '#F5F6FF',
+        //'slate-gray': '#6D6D6D',
+        'slate-gray': '#9C9C9C',
+        'pale-blue': '#F5F6F6',
         'white-400': 'rgba(255, 255, 255, 0.80)'
       },
       boxShadow: {

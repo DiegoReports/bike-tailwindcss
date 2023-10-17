@@ -16,8 +16,8 @@ const Hero = () => {
     >
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
         <p className="text-xl font-montserrat text-coral-red">Para quem busca aventura</p>
-      <h1 className="mt-10 font-palanquin text-8xl max-sm:text[72px] max-sm:leading-[82px] font-bold">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">Novos Modelos</span>
+      <h1 className="mt-10 font-palanquin text-8xl max-sm:text[72px] max-sm:leading-[82px] font-bold text-primary">
+          <span className="xl:bg-zinc-900 xl:whitespace-nowrap relative z-10 pr-10 text-primary">Novos Modelos</span>
           <br />
           <span className="text-coral-red inline-block mt-3">Biker</span> Shop
         </h1>
@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
             {statistics.map((stat) => (
               <div key={stat.label}>
-                <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
+                <p className="text-4xl font-palanquin font-bold text-primary">{stat.value}</p>
                 <p className="leading-7 font-montserrat text-slate-gray">{stat.label}</p>
               </div>
             ))}
@@ -41,8 +41,8 @@ const Hero = () => {
         <img
           src={bigBikeImage}
           alt="bike collection"
-          width={310}
-          height={200}
+          width={510}
+          height={400}
           className="object-contain relative z-10"
         />
 

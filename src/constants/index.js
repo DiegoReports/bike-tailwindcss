@@ -97,7 +97,7 @@ export const products = [
   }
 ]
 
-export const equipment = [
+export const equipments = [
   {
     imgURL: bike4,
     name: 'Silver Air Street-01',

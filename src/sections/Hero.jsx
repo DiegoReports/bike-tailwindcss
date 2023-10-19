@@ -20,7 +20,7 @@ const Hero = () => {
           <span className="xl:bg-zinc-900 xl:whitespace-nowrap relative z-10 pr-10 text-yellow-50">Novos Modelos</span>
           <br />
           <span className="text-coral-red inline-block mt-3">Biker</span> Shop
-        </h1>
+      </h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Encontre as novidades para pedalar com segurança, velocidade, e com bom preço.</p>
         <Button 
           label="Show now"

@@ -1,4 +1,5 @@
 import arrowRight from './arrow-right.svg'
+import purchase from './purchase.svg'
 import chevronLeft from './chevron-left.svg'
 import cheveronRight from './chevron-right.svg'
 import copyrightSign from './copyright-sign.svg'
@@ -12,16 +13,17 @@ import truckFast from './truck-fast.svg'
 import twitter from './twitter.svg'
 
 export {
-    arrowRight,
-    cheveronRight,
-    chevronLeft,
-    copyrightSign,
-    facebook,
-    hamburger,
-    instagram,
-    support,
-    shieldTick,
-    star,
-    truckFast,
-    twitter
+  arrowRight,
+  purchase,
+  cheveronRight,
+  chevronLeft,
+  copyrightSign,
+  facebook,
+  hamburger,
+  instagram,
+  support,
+  shieldTick,
+  star,
+  truckFast,
+  twitter
 }

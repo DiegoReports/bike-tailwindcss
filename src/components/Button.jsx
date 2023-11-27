@@ -1,11 +1,11 @@
-const Button = ({ label, iconURL, backgroundColor, borderColor, textColor }) => {
+const Button = ({ label, iconURL, backgroundColor, borderColor, textColor, fullWidth }) => {
   return (
     <button className={`
     flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none transition ease-in-out delay-10  0 hover:bg-transparent hover:text-white
       ${
         backgroundColor 
         ? `${backgroundColor} ${textColor} ${borderColor}` 
-        : "bg-coral-red text-white border-coral-red"} rounded-full w-full"}`
+        : "bg-coral-red text-white border-coral-red"} rounded-full ${fullWidth && 'w-full'}"}`
 
     }>
 

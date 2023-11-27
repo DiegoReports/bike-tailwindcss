@@ -13,9 +13,9 @@ const SpecialOffer = () => {
           <span className="text-coral-red"> Condições</span>
           <span> Especiais</span>
       </h2>
-        <p className="mt-4 lg:max-w-lg info-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur magnam sunt corporis provident quo amet deleniti voluptatum vel omnis quia officiis aliquid, maiores nisi quod nam error ipsa inventore consectetur!</p>
+        <p className="mt-4 lg:max-w-lg info-text">Não adie mais o sonho de ter a sua Bike turbinada! Aproveite as <strong>promoções</strong> e as condições especiais que a <strong>Biker Store</strong> preparou para você.</p>
 
-        <p className="mt-6 lg:max-w-lg info-text">Descubra uma maneira nova e emocionante de explorar o mundo sobre duas rodas com nossas bicicletas de qualidade superior.</p>
+        <p className="mt-6 lg:max-w-lg info-text">Navegue pelo nosso catálogo e veja as mais diversas opções e estilos de Bikes e equipamentos para fazer uma pedalada radical e ao mesmo tempo segura.</p>
 
         <div className="mt-11 flex flex-wrap gap-4">
         <Button label="Compre aqui" iconURL={purchase}/>

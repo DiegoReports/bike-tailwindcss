@@ -123,19 +123,21 @@ export const equipments = [
 export const services = [
   {
     imgURL: truckFast,
-    label: 'Free shipping',
-    subtext: 'Enjoy seamless shopping with our complimentary shipping service.'
+    label: 'Entrega rápida',
+    subtext:
+      'Levamos sua bike o mais rápido possível, em qualquer lugar do Brasil que você estiver.'
   },
   {
     imgURL: shieldTick,
-    label: 'Secure Payment',
+    label: 'Pagamento Seguro',
     subtext:
-      'Experience worry-free transactions with our secure payment options.'
+      'Tenha uma experiência segura e com sigilo de dados ao realizar seu pagamento conosco.'
   },
   {
     imgURL: support,
-    label: 'Love to help you',
-    subtext: 'Our dedicated team is here to assist you every step of the way.'
+    label: 'Amamos te ajudar',
+    subtext:
+      'Nosso time de especialista é dedicado em tirar dúvidas e dar todo suporte que você precisar.'
   }
 ]
 

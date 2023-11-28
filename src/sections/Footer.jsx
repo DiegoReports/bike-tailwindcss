@@ -1,3 +1,4 @@
+import { copyrightSign } from "../assets/icons"
 import { footerLogo } from "../assets/images"
 import { footerLinks, socialMedia } from "../constants"
 
@@ -35,7 +36,8 @@ const Footer = () => {
                   <h4 className="text-white font-montserrat font-medium mb-6 text-2xl leading-normal">{section.title}</h4>
                   <ul>
                     {section.links.map((link) => (
-                      <li className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-80 duration-300">
+                      <li className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-80 duration-300 cursor-pointer" key={link.name}>
+                       
                         <a>{link.name}</a>
                       </li>
                     ))}
@@ -43,6 +45,20 @@ const Footer = () => {
                 </div>
               ))}
         </div>
+      </div>
+
+      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
+        <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
+            <img 
+              src={copyrightSign} 
+              alt="Copyright"
+              width={20}
+              height={20}
+              className="rounded-full m-0"
+            />
+           <small> Copyright. Todos direitos reservados. <br /> Diego Reports Technology</small>
+        </div>
+        <p className="font-montserrat cursor-pointer mt-1 text-sm">Termos & Condições</p>
       </div>
     </footer>
   )

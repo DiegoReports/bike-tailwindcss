@@ -160,7 +160,7 @@ export const reviews = [
 
 export const footerLinks = [
   {
-    title: 'Products',
+    title: 'Produtos',
     links: [
       { name: 'Silver Mountain 1', link: '/' },
       { name: 'Silver Slim 1', link: '/' },
@@ -171,7 +171,7 @@ export const footerLinks = [
     ]
   },
   {
-    title: 'Help',
+    title: 'Suporte',
     links: [
       { name: 'About us', link: '/' },
       { name: 'FAQs', link: '/' },
@@ -181,7 +181,7 @@ export const footerLinks = [
     ]
   },
   {
-    title: 'Get in touch',
+    title: 'Entre em Contato',
     links: [
       { name: 'customer@nike.com', link: 'mailto:customer@nike.com' },
       { name: '+92554862354', link: 'tel:+92554862354' }

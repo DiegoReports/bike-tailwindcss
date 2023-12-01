@@ -66,7 +66,6 @@ const Hero = () => {
           whileInView={{ opacity: 1, y: 1, scale: 1 }}
           exit={{ opacity: 0, y: 200, scale: 0.5 }}
           transition={{ duration: 2 }}
-
         >
           <img
             src={bigBikeImage}

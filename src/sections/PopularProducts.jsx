@@ -25,9 +25,10 @@ const PopularProducts = () => {
 
       <motion.div 
           className="mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14"
-          initial={{ opacity: 0, scale:0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7 , delay: 0.2}}
+          initial= {{ opacity: 0, x: -100 }}
+          whileInView= {{ opacity: 1, x: 0 }}
+          exit= {{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
       >
         {equipments.map((equipment) => (
           <PopularProductCard

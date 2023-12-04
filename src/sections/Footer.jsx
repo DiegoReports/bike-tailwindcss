@@ -1,6 +1,9 @@
+'use-client'
+
 import { copyrightSign } from "../assets/icons"
 import { footerLogo } from "../assets/images"
 import { footerLinks, socialMedia } from "../constants"
+import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
@@ -8,12 +11,18 @@ const Footer = () => {
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
           <a href="/">
+            <motion.div
+                initial={{ opacity: 0, scale:0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.7 , delay: 0.2}}
+            >
             <img 
               src={footerLogo} 
               alt="icone de logo BikerStore" 
               width={150}
               height={46}
             />
+            </motion.div>
           </a>
           <p className="mt-6 leading-7 font-montserrat text-white-400 sm:max-w-sm">Encontre uma de nossas lojas físicas mais perto de você e venha nos fazer uma visita.</p>
           <div className="flex items-center gap-5 mt-8">

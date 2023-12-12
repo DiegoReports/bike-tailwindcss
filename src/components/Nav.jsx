@@ -4,8 +4,16 @@ import { headerLogo } from '../assets/images'
 import { hamburger } from '../assets/icons'
 import { navLinks } from '../constants'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 const Nav = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <motion.header 
         className="max-lg:fixed padding-x py-8 z-10 w-full bg-zinc-900"
@@ -22,26 +30,40 @@ const Nav = () => {
             height={29}
           />
         </a>
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+{/*         <ul 
+            className="className=flex-1 flex justify-center items-center gap-16 max-lg:hidden"
+        > */}
+
+{/*             <ul 
+            className="flex-1 flex justify-center items-center gap-16 md:absolute md:items-center z-[-1] md:z-auto absolute w-full left-0 md:py-0 py-4 md:pl-0 pl-7 md:w-full max-lg:flex-col max-lg:gap-12 max-lg:absolute max-lg:top-20 max-lg:bg-coral-red max-lg:flex"
+            > */}
+        <ul
+          className={`flex-1 flex justify-center items-center gap-16 md:absolute md:items-center z-[-1] md:z-auto absolute w-full left-0 md:py-0 py-4 md:pl-0 pl-7 md:w-full max-lg:flex-col max-lg:gap-12 max-lg:absolute max-lg:top-20 max-lg:bg-coral-red max-lg:flex ${
+            menuOpen ? 'max-lg:flex opacity-100 top-0' : 'max-lg:flex opacity-0 top-[-400px]'
+          } transition-all ease-in duration-500`}
+        >
           {navLinks.map((item) => (
             <li key={item.label}>
-              <a 
+{/*               <a 
                 href={item.href}
                 className="p-1 font-montserrat leading-normal text-lg text-coral-red font-normal transition ease-in-out delay-80 hover:text-orange-300 hover:border-b hover:border-orange-300"
+              > */}
+
+              <a 
+                href={item.href}
+                className={`
+                p-1 font-montserrat leading-normal text-lg text-coral-red font-normal transition ease-in-out delay-80 hover:text-orange-300 hover:border-b hover:border-orange-300 ${
+                  menuOpen ? 'max-lg:text-yellow-50':'max-lg:text-yellow-50'}`}
               >
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
-        <div className="hidden max-lg:block">
-          <img
-            src={hamburger}
-            alt='Menu mobile'
-            width={25}
-            height={25}
-          />
-        </div>
+        <button className="hidden max-lg:block" onClick={toggleMenu}>
+          <img src={hamburger} alt="Menu mobile" width={25} height={25} />
+        </button>
+
       </nav>
     </motion.header>
   )

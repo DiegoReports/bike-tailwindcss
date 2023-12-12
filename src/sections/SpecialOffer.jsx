@@ -33,17 +33,10 @@ const SpecialOffer = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
           > Especiais</motion.span>
       </h2>
-        <motion.div
-/*             initial= {{ opacity: 0, x: 100 }}
-            whileInView= {{ opacity: 1, x: 0 }}
-            exit= {{ opacity: 0, x: 100 }}
-            transition={{ duration: 0.5, delay: 0.2 }} */
-        >
+
         <p className="mt-4 lg:max-w-lg info-text">Não adie mais o sonho de ter a sua Bike turbinada! Aproveite as <strong>promoções</strong> e as condições especiais que a <strong>Biker Store</strong> preparou para você.</p>
 
         <p className="mt-6 lg:max-w-lg info-text">Navegue pelo nosso catálogo e veja as mais diversas opções e estilos de Bikes e equipamentos para fazer uma pedalada radical e ao mesmo tempo segura.</p>
-
-        </motion.div>
 
         <motion.div 
             className="mt-11 flex flex-wrap gap-4"

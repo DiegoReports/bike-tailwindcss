@@ -11,13 +11,13 @@ const SpecialOffer = () => {
         id="specialOffer"
         className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
       <motion.div 
-          className="flex-1"
+          className="flex-1 lg:flex lg:items-center lg:justify-center"
           initial= {{ opacity: 0, x: -100 }}
           whileInView= {{ opacity: 1, x: 0 }}
           exit= {{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}      
       >
-        <img src={offer} width={773} height={687} className="object-contain w-full"/>
+        <img src={offer} width={773} height={687} className="object-contain w-full lg:w-9/12"/>
       </motion.div>
       <div className="flex flex-1 flex-col">
       <h2 className="mt-10 font-palanquin text-4xl capitalize font-bold text-yellow-50 lg:max-w-lg">

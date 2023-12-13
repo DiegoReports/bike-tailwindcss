@@ -28,6 +28,7 @@ const Nav = () => {
               flex-1 flex justify-center items-center gap-16 text-sm absolute w-full
               left-0 py-4 pl-7
               md:gap-10
+              lg:gap-8
               max-lg:flex-col max-lg:gap-12 max-lg:absolute max-lg:top-20 max-lg:bg-coral-red ${
                 menuOpen ? 'max-lg:flex opacity-100 top-0' :'max-lg:flex max-lg:opacity-0 max-lg:top-[-400px]'
               } transition-all ease-in duration-500
@@ -38,7 +39,7 @@ const Nav = () => {
               <a 
                 href={item.href}
                 className={`
-                p-1 font-montserrat leading-normal text-lg text-coral-red font-normal transition ease-in-out delay-80 hover:text-orange-300 hover:border-b hover:border-orange-300 ${
+                p-1 font-montserrat leading-normal text-lg lg:text-sm text-coral-red font-normal transition ease-in-out delay-80 hover:text-orange-300 hover:border-b hover:border-orange-300 ${
                   menuOpen ? 'max-lg:text-yellow-50':'max-lg:text-yellow-50'}`}
                 onClick={() => setMenuOpen(false)}
               >

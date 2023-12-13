@@ -33,8 +33,10 @@ import {
 
 export const navLinks = [
   { href: '#home', label: 'Home' },
-  { href: '#about-us', label: 'About Us' },
-  { href: '#products', label: 'Products' },
+  { href: '#products', label: 'Nossas Bikes' },
+  { href: '#about-us', label: 'Sobre nós' },
+  { href: '#specialOffer', label: 'Ofertas' },
+  { href: '#testimonials', label: 'Depoimentos' },
   { href: '#contact-us', label: 'Contact Us' }
 ]
 

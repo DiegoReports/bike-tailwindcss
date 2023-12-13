@@ -1,27 +1,19 @@
-'use-client'
-
 import { headerLogo } from '../assets/images'
 import { hamburger } from '../assets/icons'
 import { navLinks } from '../constants'
-import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 
 const Nav = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = useCallback(() => {
+    setMenuOpen(prevMenuOpen => !prevMenuOpen);
+  }, [setMenuOpen]);
 
   return (
-    <motion.header 
-        className="max-lg:fixed padding-x py-8 z-10 w-full bg-zinc-900"
-        initial={{ top: -100 }}
-        animate={{ top: 0 }}
-        transition={{ duration: 0.5 }}
-    >
-      <nav className="flex justify-between items-center max-container">
+    <header className='padding-x py-8 absolute z-10 w-full'>
+      <nav className='flex justify-between items-center max-container'>
         <a href="/">
           <img 
             src={headerLogo} 
@@ -30,42 +22,44 @@ const Nav = () => {
             height={29}
           />
         </a>
-{/*         <ul 
-            className="className=flex-1 flex justify-center items-center gap-16 max-lg:hidden"
-        > */}
-
-{/*             <ul 
-            className="flex-1 flex justify-center items-center gap-16 md:absolute md:items-center z-[-1] md:z-auto absolute w-full left-0 md:py-0 py-4 md:pl-0 pl-7 md:w-full max-lg:flex-col max-lg:gap-12 max-lg:absolute max-lg:top-20 max-lg:bg-coral-red max-lg:flex"
-            > */}
-        <ul
-          className={`flex-1 flex justify-center items-center gap-16 md:absolute md:items-center z-[-1] md:z-auto absolute w-full left-0 md:py-0 py-4 md:pl-0 pl-7 md:w-full max-lg:flex-col max-lg:gap-12 max-lg:absolute max-lg:top-20 max-lg:bg-coral-red max-lg:flex ${
-            menuOpen ? 'max-lg:flex opacity-100 top-0' : 'max-lg:flex opacity-0 top-[-400px]'
-          } transition-all ease-in duration-500`}
-        >
+{/*         <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'> */}
+          <ul
+            className={`
+              flex-1 flex justify-center items-center gap-16 text-sm absolute w-full
+              left-0 py-4 pl-7
+              md:gap-10
+              max-lg:flex-col max-lg:gap-12 max-lg:absolute max-lg:top-20 max-lg:bg-coral-red ${
+                menuOpen ? 'max-lg:flex opacity-100 top-0' :'max-lg:flex max-lg:opacity-0 max-lg:top-[-400px]'
+              } transition-all ease-in duration-500
+            `}
+          >
           {navLinks.map((item) => (
             <li key={item.label}>
-{/*               <a 
-                href={item.href}
-                className="p-1 font-montserrat leading-normal text-lg text-coral-red font-normal transition ease-in-out delay-80 hover:text-orange-300 hover:border-b hover:border-orange-300"
-              > */}
-
               <a 
                 href={item.href}
                 className={`
                 p-1 font-montserrat leading-normal text-lg text-coral-red font-normal transition ease-in-out delay-80 hover:text-orange-300 hover:border-b hover:border-orange-300 ${
                   menuOpen ? 'max-lg:text-yellow-50':'max-lg:text-yellow-50'}`}
+                onClick={() => setMenuOpen(false)}
               >
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
-        <button className="hidden max-lg:block" onClick={toggleMenu}>
-          <img src={hamburger} alt="Menu mobile" width={25} height={25} />
+        <button 
+            className="hidden max-lg:block"
+            onClick={toggleMenu}
+        >
+          <img
+            src={hamburger}
+            alt='Menu mobile'
+            width={25}
+            height={25}
+          />
         </button>
-
       </nav>
-    </motion.header>
+    </header>
   )
 }
 

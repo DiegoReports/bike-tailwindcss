@@ -7,7 +7,9 @@ import { motion } from 'framer-motion'
 
 const SpecialOffer = () => {
   return (
-    <section className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
+    <section 
+        id="specialOffer"
+        className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
       <motion.div 
           className="flex-1"
           initial= {{ opacity: 0, x: -100 }}

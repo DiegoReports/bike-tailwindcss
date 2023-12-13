@@ -1,4 +1,5 @@
 import arrowRight from './arrow-right.svg'
+import arrowUp from './arrow-up.svg'
 import purchase from './purchase.svg'
 import chevronLeft from './chevron-left.svg'
 import cheveronRight from './chevron-right.svg'
@@ -14,6 +15,7 @@ import twitter from './twitter.svg'
 
 export {
   arrowRight,
+  arrowUp,
   purchase,
   cheveronRight,
   chevronLeft,

@@ -4,7 +4,9 @@ import { motion } from 'framer-motion'
 
 const CustomerReviews = () => {
   return (
-      <section className="max-container">
+      <section 
+          id="testimonials"
+          className="max-container">
         <motion.h3 
             className="font-palanquin text-center text-4xl font-bold"
             initial= {{ opacity: 0, y: 100 }}

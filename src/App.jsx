@@ -1,5 +1,6 @@
 import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from "./sections"
 import Nav from './components/Nav'
+import BackToTopButton from "./components/BackToTopButton"
 
 const App = () => (
   <main className="relative bg-zinc-900">
@@ -7,6 +8,7 @@ const App = () => (
     <section className="xl:padding-l wide:padding-r padding-b">
       <Hero/>
     </section>
+    <BackToTopButton />
 
     <section className="padding">
       <PopularProducts/>
@@ -29,6 +31,7 @@ const App = () => (
     <section className="bg-black padding-x padding-t pb-8">
       <Footer/>
     </section>
+
   </main>
 )
 

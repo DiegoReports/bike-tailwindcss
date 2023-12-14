@@ -65,7 +65,10 @@ const Footer = () => {
               height={20}
               className="rounded-full m-0"
             />
-           <small> Copyright. Todos direitos reservados. <br /> Diego Reports Technology</small>
+           <small> Copyright. Todos direitos reservados. <br /> <a 
+              className="underline"
+              href="https://www.instagram.com/dh.reports/" 
+              target="_blank">DH Reports Technology</a></small>
         </div>
         <p className="font-montserrat cursor-pointer mt-1 text-sm">Termos & Condições</p>
       </div>

@@ -1,16 +1,7 @@
-'use-client'
-
 import { star } from '../assets/icons'
-import { motion } from '../../node_modules/framer-motion'
 
 const PopularProductCard = ({imgURL, name, price}) => {
 
-/*   const animProps = {
-    initial:{ opacity: 0, x: -100 },
-    animate:{ opacity: 1, x: 0 },
-    exit:{ opacity: 0, x: -100 },
-    transition:{ duration: 0.15, delay: 0.5}
-  } */
   return (
     <div 
         className="flex flex-1 flex-col w-full max-sm:w-full"

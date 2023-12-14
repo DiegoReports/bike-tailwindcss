@@ -1,4 +1,4 @@
-# BIKER STORE
+<h1 align=center>🚲 BIKER STORE</h1>
 
 Landing page customizada com Tailwindcss, para exibir loja de venda de bicicletas para todas as modalidades e estilos.
 

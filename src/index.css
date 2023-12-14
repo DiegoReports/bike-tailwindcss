@@ -12,6 +12,20 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff8800; /* Cor da barra de rolagem */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #ff8800 transparent; /* Cor da barra de rolagem e fundo */
+}
+
 @layer components {
   .max-container {
     max-width: 1440px;

@@ -49,4 +49,5 @@ $ npm run dev
 
 ## Autores
 
-- [@dh.reports](https://www.instagram.com/dh.reports) (Instagram)
+- [@guinho_dihenrique](https://www.instagram.com/guinho_dihenrique) (Instagram)
+- [Likendin](https://www.linkedin.com/in/dh-goncalves/)
